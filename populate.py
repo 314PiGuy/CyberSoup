@@ -246,7 +246,7 @@ if __name__ == "__main__":
                             user_id=user.id,
                             team_id=user.team_id,
                             challenge_id=chalid,
-                            ip="127.0.0.1",
+                            ip="0.0.0.0",
                             provided=gen_word(),
                         )
 
@@ -278,7 +278,7 @@ if __name__ == "__main__":
                                 user_id=user_id,
                                 team_id=team.id,
                                 challenge_id=chalid,
-                                ip="127.0.0.1",
+                                ip="0.0.0.0",
                                 provided=gen_word(),
                             )
                             new_base = random_date(
@@ -333,7 +333,7 @@ if __name__ == "__main__":
                         user_id=user.id,
                         team_id=user.team_id,
                         challenge_id=chalid,
-                        ip="127.0.0.1",
+                        ip="0.0.0.0",
                         provided=gen_word(),
                     )
 

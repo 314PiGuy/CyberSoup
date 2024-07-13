@@ -454,7 +454,7 @@ def gen_solve(
     user_id,
     team_id=None,
     challenge_id=None,
-    ip="127.0.0.1",
+    ip="0.0.0.0",
     provided="rightkey",
     **kwargs
 ):
@@ -479,7 +479,7 @@ def gen_fail(
     user_id,
     team_id=None,
     challenge_id=None,
-    ip="127.0.0.1",
+    ip="0.0.0.0",
     provided="wrongkey",
     **kwargs
 ):
@@ -497,7 +497,7 @@ def gen_fail(
     return fail
 
 
-def gen_tracking(db, user_id=None, ip="127.0.0.1", **kwargs):
+def gen_tracking(db, user_id=None, ip="0.0.0.0", **kwargs):
     tracking = Tracking(ip=ip, user_id=user_id, **kwargs)
     db.session.add(tracking)
     db.session.commit()
